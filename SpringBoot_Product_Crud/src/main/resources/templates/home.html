@@ -1,0 +1,50 @@
+<html  lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Product System</title>
+	<style>
+		table {
+			background-color: skyblue;
+			border-radius: 10px;
+		}
+		body{
+			background-color:lightseagreen
+		}
+	</style>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body bgcolor="skyblue">
+	<center>
+		<h2>Register Product</h2>
+		<form action="reg" method="post">
+			<table align="center" cellspacing="20" border="0">
+				<tr>
+					<td> Product Name</td>
+					<td><input type="text" name="pname" size="18"></td>
+				</tr><br><hr>
+				<tr>
+					<td>Product category</td>
+					<td><input type="text" name="pcategory" size="18"></td>
+				</tr>
+				<tr>
+					<td>Product Made In</td>
+					<td><input type="text" name="madeIn" size="18"></td>
+				</tr>
+				<tr>
+					<td>Product Price</td>
+					<td><input type="text" name="price" size="18"></td>
+				</tr>
+				<tr>
+
+					<td colspan="2" align="center"><button type="submit" class="btn btn-primary btn-sm mb-3"> Save Product</button></td>
+				</tr>
+
+			</table><br>
+			<a th:href="@{/showall}" class="btn btn-primary btn-sm mb-3"> Back to Product-List </a>
+		</form>
+</body>
+</center>
+
+</html>
